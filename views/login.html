@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Secure ToDo App</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-header">
+            <a href="/" class="back-link">← Back to Home</a>
+            <h1>🔑 Login</h1>
+            <p class="auth-subtitle">Sign in to access your secure ToDo dashboard</p>
+        </div>
+        
+        <div class="card">
+            <div id="error-message" class="error-message"></div>
+            <div id="success-message" class="success-message"></div>
+            
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <span class="btn-icon">🔓</span>
+                    Sign In
+                </button>
+            </form>
+            
+            <div class="auth-divider">
+                <div class="divider">OR</div>
+                <a href="/auth/login" class="btn btn-oauth">
+                    <span class="btn-icon">🚀</span>
+                    Login with OAuth Provider
+                </a>
+            </div>
+            
+            <div class="auth-footer">
+                <p class="text-center">
+                    Don't have an account? 
+                    <a href="/register" class="link-primary">Create one here</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>
